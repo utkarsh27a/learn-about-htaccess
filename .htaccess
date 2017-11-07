@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /learn-about-htaccess/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#RewriteRule ^(*.html)$ index.html
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+DirectoryIndex home.php
+Options +Indexes
+IndexIgnore *.php
+
+
+Redirect /u /users
+
+
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /var/www/.htpasswd
+Require valid-user
