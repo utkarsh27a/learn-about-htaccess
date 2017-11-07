@@ -1,5 +1,5 @@
 Why we use htaccess file?
- In one line we can say we use htaccess file for URL Rewriting.
+ We can use additional functions and features of apache web server with htacces, but htaccess majorly use for URL Rewriting.
 
 Then the next question ocurs that why we Rewrite URLs?
  We Rewrite URLs to make it SEO frindly, to make it Clean URL.
